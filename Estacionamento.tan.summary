@@ -1,0 +1,106 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.200 ns
+From           : DIP_8
+To             : Estacionamento:inst1|74190:tens63|51
+From Clock     : --
+To Clock       : DIP_8
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 156.300 ns
+From           : seletor:inst|inst5
+To             : GPIO6
+From Clock     : clock_25
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 69.300 ns
+From           : DIP_8
+To             : Estacionamento:inst1|74190:tens|50
+From Clock     : --
+To Clock       : clock_25
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock_25'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 23.09 MHz ( period = 43.300 ns )
+From           : seletor:inst|inst5
+To             : seletor:inst|inst5
+From Clock     : clock_25
+To Clock       : clock_25
+Failed Paths   : 0
+
+Type           : Clock Setup: 'DIP_8'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 30.77 MHz ( period = 32.500 ns )
+From           : seletor:inst|inst5
+To             : seletor:inst|inst5
+From Clock     : DIP_8
+To Clock       : DIP_8
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock_in'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 119.05 MHz ( period = 8.400 ns )
+From           : seletor:inst|inst5
+To             : seletor:inst|inst5
+From Clock     : clock_in
+To Clock       : clock_in
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clock_25'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : seletor:inst|inst5
+To             : seletor:inst|inst3
+From Clock     : clock_25
+To Clock       : clock_25
+Failed Paths   : 50
+
+Type           : Clock Hold: 'DIP_8'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : seletor:inst|inst5
+To             : seletor:inst|inst3
+From Clock     : DIP_8
+To Clock       : DIP_8
+Failed Paths   : 47
+
+Type           : Clock Hold: 'clock_in'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : seletor:inst|inst5
+To             : seletor:inst|inst3
+From Clock     : clock_in
+To Clock       : clock_in
+Failed Paths   : 11
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 108
+
+--------------------------------------------------------------------------------------
+

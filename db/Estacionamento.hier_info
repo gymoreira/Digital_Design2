@@ -1,0 +1,1817 @@
+|Garagem
+GPIO0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+clock_in => Divisor:inst11.clock_32
+clock_25 => Divisor:inst11.clock_25
+GPIO9 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+GPIO10 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+GPIO8 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+GPIO1 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+DIP_8 => inst26.IN0
+PB_1 => Debouncer:inst10.button
+PB_2 => inst24.IN0
+PB_3 => inst23.IN0
+PB_4 => inst16.IN0
+GPIO11 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+GPIO6 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+GPIO4 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+GPIO3 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+GPIO2 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+GPIO7 <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+AS <= Estacionamento:inst1.A
+BS <= Estacionamento:inst1.B
+CS <= Estacionamento:inst1.C
+Coluna_1 <= LetrasMatriz:inst25.Coluna_1
+Coluna_2 <= LetrasMatriz:inst25.Coluna_2
+Coluna_3 <= LetrasMatriz:inst25.Coluna_3
+Coluna_4 <= LetrasMatriz:inst25.Coluna_4
+Coluna_5 <= LetrasMatriz:inst25.Coluna_5
+Linha_1 <= LetrasMatriz:inst25.Linha_1
+Linha_2 <= LetrasMatriz:inst25.Linha_2
+Linha_3 <= LetrasMatriz:inst25.Linha_3
+Linha_4 <= LetrasMatriz:inst25.Linha_4
+Linha_5 <= LetrasMatriz:inst25.Linha_5
+Linha_6 <= LetrasMatriz:inst25.Linha_6
+Linha_7 <= LetrasMatriz:inst25.Linha_7
+A => ~NO_FANOUT~
+B => ~NO_FANOUT~
+
+
+|Garagem|74139o:inst6
+Y10N <= 33.DB_MAX_OUTPUT_PORT_TYPE
+G1N => 7.IN0
+B1 => 11.IN0
+A1 => 8.IN0
+Y13N <= 36.DB_MAX_OUTPUT_PORT_TYPE
+Y12N <= 35.DB_MAX_OUTPUT_PORT_TYPE
+Y11N <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|seletor2:inst3
+SEL1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+SEL0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Divisor:inst11
+DBR25clock_out <= inst103.DB_MAX_OUTPUT_PORT_TYPE
+clock_25 => inst7.CLK
+4seconds <= 74161:inst116.QD
+clock_32 => inst.CLK
+REG <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+1kHz <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+1second <= 74161:inst114.QA
+
+
+|Garagem|Divisor:inst11|74161:inst116
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|Garagem|Divisor:inst11|74161:inst116|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Divisor:inst11|74161:inst114
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|Garagem|Divisor:inst11|74161:inst114|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Divisor:inst11|74161:inst112
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|Garagem|Divisor:inst11|74161:inst112|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Divisor:inst11|74161:inst113
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|Garagem|Divisor:inst11|74161:inst113|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|7449:inst5
+OG <= 33.DB_MAX_OUTPUT_PORT_TYPE
+C => 9.IN0
+BIN => 13.IN1
+BIN => 12.IN1
+BIN => 11.IN1
+BIN => 14.IN1
+B => 8.IN0
+A => 7.IN0
+D => 10.IN0
+OF <= 37.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 32.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 36.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 31.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 35.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|MUX:inst32
+Y4 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst43.IN0
+SEL1 => inst6.IN0
+SEL1 => inst45.IN1
+SEL1 => inst13.IN1
+SEL1 => inst42.IN1
+SEL1 => inst10.IN1
+SEL1 => inst39.IN1
+SEL1 => inst4.IN1
+SEL1 => inst35.IN1
+SEL1 => inst9.IN1
+SEL0 => inst7.IN0
+SEL0 => inst13.IN2
+SEL0 => inst44.IN2
+SEL0 => inst10.IN2
+SEL0 => inst41.IN2
+SEL0 => inst4.IN2
+SEL0 => inst38.IN2
+SEL0 => inst9.IN2
+SEL0 => inst34.IN2
+C4 => inst45.IN0
+D4 => inst13.IN0
+B4 => inst44.IN0
+Y3 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst40.IN0
+C3 => inst42.IN0
+D3 => inst10.IN0
+B3 => inst41.IN0
+Y2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst37.IN0
+C2 => inst39.IN0
+D2 => inst4.IN0
+B2 => inst38.IN0
+Y1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst33.IN0
+C1 => inst35.IN0
+D1 => inst9.IN0
+B1 => inst34.IN0
+
+
+|Garagem|Estacionamento:inst1
+1Q <= 1Q~0.DB_MAX_OUTPUT_PORT_TYPE
+CLDN => 74190:ones62.LDN
+CLDN => 74190:tens63.LDN
+CDNUP => inst70.IN0
+CDNUP => 74190:tens63.DNUP
+CDNUP => inst67.IN1
+CDNUP => 74190:ones62.DNUP
+CCONTE => Debouncer:inst14.button
+CLKREG => Debouncer:inst14.clock
+CLKREG => 74173:inst27.CLK
+CLKREG => Debouncer:inst13.clock
+CLKREG => 74173:inst30.CLK
+CLKREG => 74173:inst46.CLK
+CLKREG => Debouncer:inst12.clock
+CLKREG => 74173:inst31.CLK
+CLKREG => 74173:inst28.CLK
+CLKREG => 74173:inst29.CLK
+CLKREG => 74173:inst33.CLK
+CLKREG => 74173:inst48.CLK
+COE => 74173:inst27.MN
+COE => 74173:inst27.NN
+COE => 74173:inst28.MN
+COE => 74173:inst28.NN
+BLDN => 74190:ones61.LDN
+BLDN => 74190:tens62.LDN
+BDNUP => inst66.IN0
+BDNUP => 74190:tens62.DNUP
+BDNUP => inst2.IN2
+BDNUP => 74190:ones61.DNUP
+BCONTE => Debouncer:inst13.button
+BOE => 74173:inst30.MN
+BOE => 74173:inst30.NN
+BOE => 74173:inst29.MN
+BOE => 74173:inst29.NN
+DOE => 74173:inst46.MN
+DOE => 74173:inst46.NN
+DOE => 74173:inst48.MN
+DOE => 74173:inst48.NN
+ALDN => 74190:ones.LDN
+ALDN => 74190:tens.LDN
+ADNUP => 74190:tens.DNUP
+ADNUP => inst76.IN0
+ADNUP => inst61.IN1
+ADNUP => 74190:ones.DNUP
+ACONTE => Debouncer:inst12.button
+AOE => 74173:inst31.MN
+AOE => 74173:inst31.NN
+AOE => 74173:inst33.MN
+AOE => 74173:inst33.NN
+2Q <= 2Q~0.DB_MAX_OUTPUT_PORT_TYPE
+3Q <= 3Q~0.DB_MAX_OUTPUT_PORT_TYPE
+4Q <= 4Q~0.DB_MAX_OUTPUT_PORT_TYPE
+5Q <= 5Q~0.DB_MAX_OUTPUT_PORT_TYPE
+6Q <= 6Q~0.DB_MAX_OUTPUT_PORT_TYPE
+7Q <= 7Q~0.DB_MAX_OUTPUT_PORT_TYPE
+8Q <= 8Q~0.DB_MAX_OUTPUT_PORT_TYPE
+A <= ComparadorA:inst32.A
+B <= ComparadorA:inst32.B
+C <= ComparadorA:inst32.C
+
+
+|Garagem|Estacionamento:inst1|74173:inst27
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|74190:ones62
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Estacionamento:inst1|74190:tens63
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Estacionamento:inst1|Debouncer:inst14
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst13.CLK
+clock => inst8.CLK
+clock => inst5.CLK
+clock => inst4.CLK
+button => inst13.DATAIN
+
+
+|Garagem|Estacionamento:inst1|74173:inst30
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|74190:ones61
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Estacionamento:inst1|74190:tens62
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Estacionamento:inst1|Debouncer:inst13
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst13.CLK
+clock => inst8.CLK
+clock => inst5.CLK
+clock => inst4.CLK
+button => inst13.DATAIN
+
+
+|Garagem|Estacionamento:inst1|74173:inst46
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|74173:inst31
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|74190:ones
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Estacionamento:inst1|74190:tens
+RCON <= 58.DB_MAX_OUTPUT_PORT_TYPE
+D => 20.IN0
+LDN => 32.IN0
+CLK => 51.CLK
+CLK => 48.CLK
+CLK => 49.CLK
+CLK => 50.CLK
+CLK => 29.IN0
+GN => 13.IN0
+GN => 37.IN0
+GN => 12.IN1
+DNUP => 30.IN0
+A => 26.IN0
+B => 24.IN0
+C => 22.IN0
+MXMN <= 41.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 48.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 49.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 50.DB_MAX_OUTPUT_PORT_TYPE
+QD <= 51.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Estacionamento:inst1|Debouncer:inst12
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst13.CLK
+clock => inst8.CLK
+clock => inst5.CLK
+clock => inst4.CLK
+button => inst13.DATAIN
+
+
+|Garagem|Estacionamento:inst1|74173:inst28
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|74173:inst29
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|74173:inst33
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|74173:inst48
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32
+A <= Decoders:inst4.A
+A0 => Comparador:inst1.A0
+A0 => Comparador:inst2.A0
+B0 => Comparador:inst1.B0
+B0 => Comparador:inst3.A0
+A1 => Comparador:inst1.A1
+A1 => Comparador:inst2.A1
+B1 => Comparador:inst1.B1
+B1 => Comparador:inst3.A1
+A2 => Comparador:inst1.A2
+A2 => Comparador:inst2.A2
+B2 => Comparador:inst1.B2
+B2 => Comparador:inst3.A2
+A3 => Comparador:inst1.A3
+A3 => Comparador:inst2.A3
+B3 => Comparador:inst1.B3
+B3 => Comparador:inst3.A3
+A4 => Comparador:inst1.A4
+A4 => Comparador:inst2.A4
+B4 => Comparador:inst1.B4
+B4 => Comparador:inst3.A4
+A5 => Comparador:inst1.A5
+A5 => Comparador:inst2.A5
+B5 => Comparador:inst1.B5
+B5 => Comparador:inst3.A5
+A6 => Comparador:inst1.A6
+A6 => Comparador:inst2.A6
+B6 => Comparador:inst1.B6
+B6 => Comparador:inst3.A6
+A7 => Comparador:inst1.A7
+A7 => Comparador:inst2.A7
+B7 => Comparador:inst1.B7
+B7 => Comparador:inst3.A7
+C8 => Comparador:inst2.B0
+C8 => Comparador:inst3.B0
+C9 => Comparador:inst2.B1
+C9 => Comparador:inst3.B1
+C10 => Comparador:inst2.B2
+C10 => Comparador:inst3.B2
+C11 => Comparador:inst2.B3
+C11 => Comparador:inst3.B3
+C12 => Comparador:inst2.B4
+C12 => Comparador:inst3.B4
+C13 => Comparador:inst2.B5
+C13 => Comparador:inst3.B5
+C14 => Comparador:inst2.B6
+C14 => Comparador:inst3.B6
+C15 => Comparador:inst2.B7
+C15 => Comparador:inst3.B7
+B <= Decoders:inst4.B
+C <= Decoders:inst4.C
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Decoders:inst4
+A <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+AB1 => inst18.IN0
+AB1 => inst16.IN0
+AB1 => inst20.IN0
+BC2 => inst18.IN1
+BC2 => inst12.IN0
+AB3 => inst6.IN0
+AB3 => inst1.IN0
+AB3 => inst9.IN0
+AC2 => inst6.IN1
+AB2 => inst11.IN0
+AB2 => inst13.IN0
+AB2 => inst12.IN1
+BC3 => inst11.IN1
+BC3 => inst16.IN1
+AC3 => inst1.IN1
+BC1 => inst20.IN1
+BC1 => inst13.IN1
+AC1 => inst9.IN1
+C <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+B <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst1
+ALBO <= 7485:inst1.ALBO
+A7 => 7485:inst1.A3
+B6 => 7485:inst1.B2
+A6 => 7485:inst1.A2
+A3 => 7485:inst.A3
+B2 => 7485:inst.B2
+A2 => 7485:inst.A2
+A0 => 7485:inst.A0
+B0 => 7485:inst.B0
+B3 => 7485:inst.B3
+A1 => 7485:inst.A1
+B1 => 7485:inst.B1
+A4 => 7485:inst1.A0
+B4 => 7485:inst1.B0
+B7 => 7485:inst1.B3
+A5 => 7485:inst1.A1
+B5 => 7485:inst1.B1
+AGBO <= 7485:inst1.AGBO
+AEBO <= 7485:inst1.AEBO
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst1|7485:inst1
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst1|7485:inst1|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst1|7485:inst
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst1|7485:inst|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst2
+ALBO <= 7485:inst1.ALBO
+A7 => 7485:inst1.A3
+B6 => 7485:inst1.B2
+A6 => 7485:inst1.A2
+A3 => 7485:inst.A3
+B2 => 7485:inst.B2
+A2 => 7485:inst.A2
+A0 => 7485:inst.A0
+B0 => 7485:inst.B0
+B3 => 7485:inst.B3
+A1 => 7485:inst.A1
+B1 => 7485:inst.B1
+A4 => 7485:inst1.A0
+B4 => 7485:inst1.B0
+B7 => 7485:inst1.B3
+A5 => 7485:inst1.A1
+B5 => 7485:inst1.B1
+AGBO <= 7485:inst1.AGBO
+AEBO <= 7485:inst1.AEBO
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst2|7485:inst1
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst2|7485:inst1|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst2|7485:inst
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst2|7485:inst|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst3
+ALBO <= 7485:inst1.ALBO
+A7 => 7485:inst1.A3
+B6 => 7485:inst1.B2
+A6 => 7485:inst1.A2
+A3 => 7485:inst.A3
+B2 => 7485:inst.B2
+A2 => 7485:inst.A2
+A0 => 7485:inst.A0
+B0 => 7485:inst.B0
+B3 => 7485:inst.B3
+A1 => 7485:inst.A1
+B1 => 7485:inst.B1
+A4 => 7485:inst1.A0
+B4 => 7485:inst1.B0
+B7 => 7485:inst1.B3
+A5 => 7485:inst1.A1
+B5 => 7485:inst1.B1
+AGBO <= 7485:inst1.AGBO
+AEBO <= 7485:inst1.AEBO
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst3|7485:inst1
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst3|7485:inst1|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst3|7485:inst
+a[0] => f7485:sub.a[0]
+a[1] => f7485:sub.a[1]
+a[2] => f7485:sub.a[2]
+a[3] => f7485:sub.a[3]
+b[0] => f7485:sub.b[0]
+b[1] => f7485:sub.b[1]
+b[2] => f7485:sub.b[2]
+b[3] => f7485:sub.b[3]
+agbi => f7485:sub.agbi
+albi => f7485:sub.albi
+aebi => f7485:sub.aebi
+agbo <= f7485:sub.agbo
+albo <= f7485:sub.albo
+aebo <= f7485:sub.aebo
+
+
+|Garagem|Estacionamento:inst1|ComparadorA:inst32|Comparador:inst3|7485:inst|f7485:sub
+ALBO <= 87.DB_MAX_OUTPUT_PORT_TYPE
+AGBI => 96.IN0
+A0 => 90.IN0
+A0 => 104.IN0
+A0 => 103.IN1
+B0 => 90.IN1
+B0 => 97.IN0
+A1 => 89.IN0
+A1 => 112.IN0
+A1 => 104.IN1
+B1 => 89.IN1
+B1 => 95.IN0
+A2 => 91.IN0
+A2 => 129.IN0
+A2 => 105.IN1
+B2 => 91.IN1
+B2 => 100.IN0
+A3 => 92.IN0
+A3 => 114.IN0
+A3 => 129.IN1
+B3 => 92.IN1
+B3 => 99.IN0
+AEBI => 93.IN0
+AEBI => 108.IN0
+AEBO <= 108.DB_MAX_OUTPUT_PORT_TYPE
+AGBO <= 86.DB_MAX_OUTPUT_PORT_TYPE
+ALBI => 134.IN0
+
+
+|Garagem|Debouncer:inst10
+out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst13.CLK
+clock => inst8.CLK
+clock => inst5.CLK
+clock => inst4.CLK
+button => inst13.DATAIN
+
+
+|Garagem|74138:inst2
+Y7N <= 22.DB_MAX_OUTPUT_PORT_TYPE
+G1 => 8.IN0
+G2BN => 1.IN1
+G2AN => 1.IN2
+B => 10.IN0
+A => 9.IN0
+C => 11.IN0
+Y6N <= 21.DB_MAX_OUTPUT_PORT_TYPE
+Y5N <= 20.DB_MAX_OUTPUT_PORT_TYPE
+Y4N <= 19.DB_MAX_OUTPUT_PORT_TYPE
+Y3N <= 18.DB_MAX_OUTPUT_PORT_TYPE
+Y2N <= 17.DB_MAX_OUTPUT_PORT_TYPE
+Y1N <= 16.DB_MAX_OUTPUT_PORT_TYPE
+Y0N <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|seletor:inst
+SEL1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+1second => inst35.IN0
+1second => inst34.IN0
+1second => inst36.IN0
+1second => inst27.IN3
+1second => inst28.IN3
+1second => inst26.IN3
+B => inst31.IN0
+B => inst27.IN2
+A => inst30.IN0
+A => inst26.IN2
+C => inst32.IN0
+C => inst28.IN2
+SEL0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|seletor:inst|74161:inst118
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|Garagem|seletor:inst|74161:inst118|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|seletor:inst|74161:inst117
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|Garagem|seletor:inst|74161:inst117|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Pedagio:inst35
+1Q <= 1Q~0.DB_MAX_OUTPUT_PORT_TYPE
+BOE1 => 74173:B1.MN
+BOE1 => 74173:B1.NN
+BOE1 => 74173:B10.MN
+BOE1 => 74173:B10.NN
+CLKREGM => 74173:B1.CLK
+CLKREGM => 74173:C1.CLK
+CLKREGM => 74173:C2.CLK
+CLKREGM => 74173:A1.CLK
+CLKREGM => 74173:C10.CLK
+CLKREGM => 74173:B10.CLK
+CLKREGM => 74173:C3.CLK
+CLKREGM => 74173:A10.CLK
+COE1 => 74173:C1.MN
+COE1 => 74173:C1.NN
+COE1 => 74173:C10.MN
+COE1 => 74173:C10.NN
+DOE1 => 74173:C2.MN
+DOE1 => 74173:C2.NN
+DOE1 => 74173:C3.MN
+DOE1 => 74173:C3.NN
+AOE1 => 74173:A1.MN
+AOE1 => 74173:A1.NN
+AOE1 => 74173:A10.MN
+AOE1 => 74173:A10.NN
+2Q <= 2Q~0.DB_MAX_OUTPUT_PORT_TYPE
+3Q <= 3Q~0.DB_MAX_OUTPUT_PORT_TYPE
+4Q <= 4Q~0.DB_MAX_OUTPUT_PORT_TYPE
+5Q <= 5Q~0.DB_MAX_OUTPUT_PORT_TYPE
+6Q <= 6Q~0.DB_MAX_OUTPUT_PORT_TYPE
+7Q <= 7Q~0.DB_MAX_OUTPUT_PORT_TYPE
+8Q <= 8Q~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|Pedagio:inst35|74173:B1
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Pedagio:inst35|74173:C1
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Pedagio:inst35|74173:C2
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Pedagio:inst35|74173:A1
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Pedagio:inst35|74173:C10
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Pedagio:inst35|74173:B10
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Pedagio:inst35|74173:C3
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|Pedagio:inst35|74173:A10
+1Q <= 42.DB_MAX_OUTPUT_PORT_TYPE
+CLR => 22.IN0
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+CLK => 6.CLK
+G1N => 25.IN0
+G2N => 25.IN1
+1D => 20.IN0
+MN => 24.IN0
+NN => 24.IN1
+2Q <= 43.DB_MAX_OUTPUT_PORT_TYPE
+2D => 18.IN0
+3Q <= 44.DB_MAX_OUTPUT_PORT_TYPE
+3D => 16.IN0
+4Q <= 45.DB_MAX_OUTPUT_PORT_TYPE
+4D => 14.IN0
+
+
+|Garagem|LetrasMatriz:inst25
+Coluna_1 <= GerenciadorLinhaColuna:inst.Coluna_1
+clk => LetraA:inst1.CLK
+clk => LetraB:inst2.CLK
+clk => LetraC:inst3.CLK
+Sel_B => GerenciadorLinhaColuna:inst.Sel_A
+Sel_A => GerenciadorLinhaColuna:inst.Sel_B
+Coluna_2 <= GerenciadorLinhaColuna:inst.Coluna_2
+Coluna_3 <= GerenciadorLinhaColuna:inst.Coluna_3
+Coluna_4 <= GerenciadorLinhaColuna:inst.Coluna_4
+Coluna_5 <= GerenciadorLinhaColuna:inst.Coluna_5
+Linha_1 <= GerenciadorLinhaColuna:inst.Linha_1
+Linha_2 <= GerenciadorLinhaColuna:inst.Linha_2
+Linha_3 <= GerenciadorLinhaColuna:inst.Linha_3
+Linha_4 <= GerenciadorLinhaColuna:inst.Linha_4
+Linha_5 <= GerenciadorLinhaColuna:inst.Linha_5
+Linha_6 <= GerenciadorLinhaColuna:inst.Linha_6
+Linha_7 <= GerenciadorLinhaColuna:inst.Linha_7
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst
+Coluna_1 <= MuxLetras:inst17.SAIDA
+C1_A => MuxLetras:inst17.A
+C2_B => MuxLetras:inst17.B
+C3_C => MuxLetras:inst17.C
+C3_C => MuxLetras:inst17.D
+Sel_A => MuxLetras:inst17.S1
+Sel_A => MuxLetras:inst18.S1
+Sel_A => MuxLetras:inst19.S1
+Sel_A => MuxLetras:inst20.S1
+Sel_A => MuxLetras:inst21.S1
+Sel_A => MuxLetras:inst22.S1
+Sel_A => MuxLetras:inst23.S1
+Sel_A => MuxLetras:inst24.S1
+Sel_A => MuxLetras:inst25.S1
+Sel_A => MuxLetras:inst26.S1
+Sel_A => MuxLetras:inst27.S1
+Sel_A => MuxLetras:inst28.S1
+Sel_B => MuxLetras:inst17.S2
+Sel_B => MuxLetras:inst18.S2
+Sel_B => MuxLetras:inst19.S2
+Sel_B => MuxLetras:inst20.S2
+Sel_B => MuxLetras:inst21.S2
+Sel_B => MuxLetras:inst22.S2
+Sel_B => MuxLetras:inst23.S2
+Sel_B => MuxLetras:inst24.S2
+Sel_B => MuxLetras:inst25.S2
+Sel_B => MuxLetras:inst26.S2
+Sel_B => MuxLetras:inst27.S2
+Sel_B => MuxLetras:inst28.S2
+Coluna_2 <= MuxLetras:inst18.SAIDA
+C1_A5 => MuxLetras:inst18.A
+C2_B6 => MuxLetras:inst18.B
+C3_C7 => MuxLetras:inst18.C
+C3_C7 => MuxLetras:inst18.D
+Coluna_3 <= MuxLetras:inst19.SAIDA
+C1_A6 => MuxLetras:inst19.A
+C2_B7 => MuxLetras:inst19.B
+C3_C8 => MuxLetras:inst19.C
+C3_C8 => MuxLetras:inst19.D
+Coluna_4 <= MuxLetras:inst20.SAIDA
+C1_A7 => MuxLetras:inst20.A
+C2_B8 => MuxLetras:inst20.B
+C3_C9 => MuxLetras:inst20.C
+C3_C9 => MuxLetras:inst20.D
+Coluna_5 <= MuxLetras:inst21.SAIDA
+C1_A8 => MuxLetras:inst21.A
+C2_B9 => MuxLetras:inst21.B
+C3_C10 => MuxLetras:inst21.C
+C3_C10 => MuxLetras:inst21.D
+Linha_1 <= MuxLetras:inst22.SAIDA
+C1_A9 => MuxLetras:inst22.A
+C2_B10 => MuxLetras:inst22.B
+C3_C11 => MuxLetras:inst22.C
+C3_C11 => MuxLetras:inst22.D
+Linha_2 <= MuxLetras:inst23.SAIDA
+C1_A10 => MuxLetras:inst23.A
+C2_B11 => MuxLetras:inst23.B
+C3_C12 => MuxLetras:inst23.C
+C3_C12 => MuxLetras:inst23.D
+Linha_3 <= MuxLetras:inst24.SAIDA
+C1_A11 => MuxLetras:inst24.A
+C2_B12 => MuxLetras:inst24.B
+C3_C13 => MuxLetras:inst24.C
+C3_C13 => MuxLetras:inst24.D
+Linha_4 <= MuxLetras:inst25.SAIDA
+C1_A12 => MuxLetras:inst25.A
+C2_B13 => MuxLetras:inst25.B
+C3_C14 => MuxLetras:inst25.C
+C3_C14 => MuxLetras:inst25.D
+Linha_5 <= MuxLetras:inst26.SAIDA
+C1_A13 => MuxLetras:inst26.A
+C2_B14 => MuxLetras:inst26.B
+C3_C15 => MuxLetras:inst26.C
+C3_C15 => MuxLetras:inst26.D
+Linha_6 <= MuxLetras:inst27.SAIDA
+C1_A14 => MuxLetras:inst27.A
+C2_B15 => MuxLetras:inst27.B
+C3_C16 => MuxLetras:inst27.C
+C3_C16 => MuxLetras:inst27.D
+Linha_7 <= MuxLetras:inst28.SAIDA
+C1_A15 => MuxLetras:inst28.A
+C2_B16 => MuxLetras:inst28.B
+C3_C17 => MuxLetras:inst28.C
+C3_C17 => MuxLetras:inst28.D
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst17
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst18
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst19
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst20
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst21
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst22
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst23
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst24
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst25
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst26
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst27
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|GerenciadorLinhaColuna:inst|MuxLetras:inst28
+SAIDA <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A => inst11.IN0
+Enable => inst7.IN0
+S2 => inst6.IN0
+S2 => inst9.IN2
+S2 => inst10.IN3
+S1 => inst.IN0
+S1 => inst8.IN2
+S1 => inst9.IN1
+C => inst8.IN0
+D => inst9.IN0
+B => inst10.IN0
+
+
+|Garagem|LetrasMatriz:inst25|LetraA:inst1
+Linha1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst5.IN0
+CLK => Linha2.DATAIN
+CLK => Linha3.DATAIN
+CLK => Linha4.DATAIN
+CLK => Linha6.DATAIN
+CLK => Linha7.DATAIN
+CLK => Coluna2.DATAIN
+CLK => Coluna3.DATAIN
+CLK => Coluna4.DATAIN
+Linha2 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha3 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha4 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha5 <= <GND>
+Linha6 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha7 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Coluna2 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna3 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna4 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna5 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Garagem|LetrasMatriz:inst25|LetraB:inst2
+Linha1 <= <GND>
+Linha2 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+CLK => Linha2.DATAIN
+CLK => Linha3.DATAIN
+CLK => inst10.IN0
+CLK => Linha5.DATAIN
+CLK => Linha6.DATAIN
+CLK => inst9.IN0
+CLK => Coluna2.DATAIN
+CLK => Coluna3.DATAIN
+CLK => Coluna4.DATAIN
+Linha3 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha4 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Linha5 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha6 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha7 <= <GND>
+Coluna1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Coluna2 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna3 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna4 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna5 <= <VCC>
+
+
+|Garagem|LetrasMatriz:inst25|LetraC:inst3
+Linha1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.IN0
+CLK => Linha2.DATAIN
+CLK => Linha3.DATAIN
+CLK => Linha4.DATAIN
+CLK => Linha5.DATAIN
+CLK => Linha6.DATAIN
+CLK => inst20.IN0
+CLK => Coluna1.DATAIN
+CLK => Coluna2.DATAIN
+CLK => Coluna3.DATAIN
+CLK => Coluna4.DATAIN
+Linha2 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha3 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha4 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha5 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha6 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Linha7 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+Coluna1 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna2 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna3 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna4 <= CLK.DB_MAX_OUTPUT_PORT_TYPE
+Coluna5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
